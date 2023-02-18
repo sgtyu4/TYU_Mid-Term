@@ -71,3 +71,22 @@ start_time = timeit.default_timer()
 floyd_recursive_main(graph4)
 end_time = timeit.default_timer()
 print(f"Recursive Floyd Warshall algorithm for 100 nodes took
+
+Input:  graph[][] = { {0,   5,  INF, 10},
+                               {INF,  0,  3,  INF},
+                               {INF, INF, 0,   1},
+                               {INF, INF, INF, 0} }
+which represents the following graph
+             10
+      (0)——->(3)
+        |              /|\
+     5 |               |  1
+        |               |  
+       \|/             |
+      (1)——->(2)
+              3 
+Output: Shortest distance matrix
+    0        5      8       9
+ INF       0      3       4
+ INF     INF    0       1 
+ INF     INF    INF    0
